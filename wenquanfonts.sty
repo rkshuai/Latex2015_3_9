@@ -1,0 +1,20 @@
+% ctex-xecjk-adobefonts.def: Adobe 的 xeCJK 字体设置，为 Adobe 的四套字体
+% vim:ft=tex
+\ProvidesPackage{wenquanfonts}
+
+\setCJKmainfont[BoldFont=文泉驿微米黑,ItalicFont=文泉驿正黑]
+  {文泉驿正黑}
+\setCJKsansfont{文泉驿微米黑}
+\setCJKmonofont{文泉驿等宽正黑}
+
+\setCJKfamilyfont{zhsong}{文泉驿正黑}
+\setCJKfamilyfont{zhhei}{文泉驿微米黑}
+\setCJKfamilyfont{zhfs}{文泉驿等宽微米黑}
+\setCJKfamilyfont{zhkai}{文泉驿等宽正黑}
+
+\newcommand*{\songti}{\CJKfamily{zhsong}} % 宋体
+\newcommand*{\heiti}{\CJKfamily{zhhei}}   % 黑体
+\newcommand*{\kaishu}{\CJKfamily{zhkai}}  % 楷书
+\newcommand*{\fangsong}{\CJKfamily{zhfs}} % 仿宋
+
+\endinput
